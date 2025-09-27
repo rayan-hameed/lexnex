@@ -68,24 +68,25 @@ const Header = () => {
               {/* <div className="relative bg-gradient-to-r from-cyan-500 to-purple-600 p-3 rounded-xl shadow-2xl transform group-hover:scale-110 transition-transform duration-300">
                 <Scale className="h-8 w-8 text-white" />
               </div> */}
-              <div className="  rounded-xl">
-  <img
-    src={Logo}
-    alt="Lexnex"
-    className="h-[102px] w-[110px] object-contain ml-[-15px] transition-transform duration-300 hover:scale-110 hover:-translate-x-y-2"
-  />
-</div>
-
-
-
+              <div className="rounded-xl">
+                <Link to="/">
+                  <img
+                    src={Logo}
+                    alt="Lexnex"
+                    className="h-[102px] w-[110px] object-contain ml-[-15px] transition-transform duration-300 hover:scale-110 hover:-translate-y-2"
+                  />
+                </Link>
+              </div>
             </div>
             <div>
-              <h1 className="ml-[-25px] text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-                LEXNEX
-              </h1>
-              <p className="ml-[-25px] text-xs text-cyan-300/80 font-medium tracking-wider ">
-                NEXT-GEN LEGAL EDUCATION
-              </p>
+              <Link to="/">
+                <h1 className="ml-[-25px] text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                  LEXNEX
+                </h1>
+                <p className="ml-[-25px] text-xs text-cyan-300/80 font-medium tracking-wider">
+                  NEXT-GEN LEGAL EDUCATION
+                </p>
+              </Link>
             </div>
           </div>
 

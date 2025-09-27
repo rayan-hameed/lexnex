@@ -1,5 +1,6 @@
 import React from 'react';
 import { Scale, BookOpen, Mail, Heart, ExternalLink, Zap, Brain, Sparkles } from 'lucide-react';
+import { Link } from "react-router-dom";
 import Logo from "./assets/Logo.png";
 
 const Footer = () => {
@@ -59,21 +60,25 @@ const Footer = () => {
               <div className="relative">
                 <div className=""></div>
                 <div className="  rounded-xl">
-  <img
-    src={Logo}
-    alt="Lexnex"
-    className="h-[102px] w-[110px] object-contain ml-[-15px] transition-transform duration-300 hover:scale-110 hover:-translate-x-y-2"
-  />
+  <Link to="/">
+    <img
+      src={Logo}
+      alt="Lexnex"
+      className="h-[102px] w-[110px] object-contain ml-[-15px] transition-transform duration-300 hover:scale-110 hover:-translate-y-2"
+    />
+  </Link>
 </div>
 
               </div>
               <div>
+                <Link to="/">
                 <h1 className="ml-[-25px] text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
                   LEXNEX
                 </h1>
                 <p className="ml-[-25px] text-xs text-cyan-300/80 font-medium tracking-wider">
                   NEXT-GEN LEGAL EDUCATION
                 </p>
+                </Link>
               </div>
             </div>
             
