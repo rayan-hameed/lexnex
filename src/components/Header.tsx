@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Logo from "./assets/Logo.png";
 import {
   Menu,
   X,
@@ -69,7 +70,7 @@ const Header = () => {
               </div> */}
               <div className="  rounded-xl">
   <img
-    src="D:\Lexnex data\Code\project-bolt-sb1-muuzx9ze (1)\project\src\components\assets\Logo.png"
+    src={Logo}
     alt="Lexnex"
     className="h-[102px] w-[110px] object-contain ml-[-15px] transition-transform duration-300 hover:scale-110 hover:-translate-x-y-2"
   />
